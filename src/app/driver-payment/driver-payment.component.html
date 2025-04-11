@@ -1,0 +1,26 @@
+<div class="payment-box">
+    <h2>Driver Payment Portal</h2>
+  
+    <label>Driver ID:</label>
+    <input [(ngModel)]="driverId" placeholder="Enter Driver ID" />
+    <button (click)="fetchDriverInfo()">Fetch Info</button>
+  
+    <div *ngIf="driverFetched" class="driver-details">
+      <p><strong>Name:</strong> {{ driverName }}</p>
+      <p><strong>Salary:</strong> ₹{{ salary }}</p>
+      <p><strong>Dues:</strong> ₹{{ dues }}</p>
+  
+      <label>Payment Mode:</label>
+      <select [(ngModel)]="paymentMode">
+        <option value="UPI">UPI</option>
+        <option value="Cash">Cash</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+  
+      <button (click)="paySalary()">Pay Salary</button>
+      <p *ngIf="salaryPaid" class="success-msg">
+        ✅ Payment Successful for {{ driverName }} ({{ driverId }}) via {{ paymentMode }}
+      </p>
+    </div>
+  </div>
+  

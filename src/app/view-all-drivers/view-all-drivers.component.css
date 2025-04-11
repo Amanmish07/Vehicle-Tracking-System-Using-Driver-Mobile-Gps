@@ -1,0 +1,16 @@
+h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    text-align: center;
+  }
+  

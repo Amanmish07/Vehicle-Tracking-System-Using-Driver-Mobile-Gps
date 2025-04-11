@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ViewAllVehiclesComponent } from './view-all-vehicles.component';
+
+describe('ViewAllVehiclesComponent', () => {
+  let component: ViewAllVehiclesComponent;
+  let fixture: ComponentFixture<ViewAllVehiclesComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [ViewAllVehiclesComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(ViewAllVehiclesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

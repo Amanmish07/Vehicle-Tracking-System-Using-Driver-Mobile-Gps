@@ -1,0 +1,36 @@
+<!-- driver-dashboard.component.html -->
+<div class="dashboard-container">
+    <div class="dashboard-header">
+      Driver Dashboard
+    </div>
+  
+    <div class="options-container">
+      <div class="option-box">
+        <h3>Start Ride</h3>
+        <button class="option-button" (click)="startRide()">Start</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>Stop Ride</h3>
+        <button class="option-button" (click)="stopRide()">Stop</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>Get Access</h3>
+        <button class="option-button" (click)="getAccess()">Get Access</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>Approve Your Location</h3>
+        <button class="option-button" (click)="approveLocation()">Approve</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>Check Payment Status</h3>
+        <button class="option-button" (click)="checkPaymentStatus()">Check Status</button>
+      </div>
+    </div>
+  
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
+  

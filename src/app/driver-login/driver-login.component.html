@@ -1,0 +1,22 @@
+<!-- driver-login.component.html -->
+<div class="driver-login-container">
+  <div class="login-box">
+    <h2>Driver Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="driverId">Driver ID:</label>
+        <input type="text" id="driverId" [(ngModel)]="driverId" name="driverId" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+      
+      <button type="submit" class="login-button">Login</button>
+      <div class="forgot-password">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+</div>

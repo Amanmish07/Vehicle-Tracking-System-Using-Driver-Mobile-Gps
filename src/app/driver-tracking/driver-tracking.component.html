@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Driver Tracking Panel</h2>
+    <p *ngIf="!isTracking">Click the button below to initiate vehicle tracking.</p>
+    <button (click)="initiateTracking()" *ngIf="!isTracking">Initiate Tracker</button>
+  
+    <div *ngIf="isTracking">
+      <p>Tracking initiated... GPS coordinates are being sent to admin.</p>
+      <!-- Display the tracking status here -->
+    </div>
+  </div>
+  

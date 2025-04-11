@@ -1,0 +1,29 @@
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Please provide your details, and let us know how we can assist you.</p>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="contactInfo.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" [(ngModel)]="contactInfo.number" name="number" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="contactInfo.email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="problem">Describe Your Issue or Feedback:</label>
+        <textarea id="problem" [(ngModel)]="contactInfo.problem" name="problem" rows="4" required></textarea>
+      </div>
+  
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  

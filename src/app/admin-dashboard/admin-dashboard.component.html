@@ -1,0 +1,53 @@
+<div class="dashboard-container">
+    <div class="dashboard-header">
+      <div class="dashboard-title">Admin Dashboard</div>
+      <div class="header-right">
+        <div class="welcome-message">
+          <span class="emoji"></span> {{ adminName }}
+        </div>
+        <button class="home-button" (click)="navigateHome()">🏠 Home</button>
+      </div>
+    </div>
+  
+    <div class="options-container">
+  
+      <div class="option-box">
+        <h3>👥 View All Drivers</h3>
+        <button class="option-button" (click)="viewAllDrivers()">View Drivers</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>🚗 Manage Vehicles</h3>
+        <button class="option-button" (click)="manageVehicle()">Manage</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>📋 View All Vehicles</h3>
+        <button class="option-button" (click)="viewAllVehicles()">View Vehicles</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>➕ Add Driver</h3>
+        <button class="option-button" (click)="addDriver()">Add Driver</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>📍 Track Vehicle</h3>
+        <button class="option-button" (click)="trackVehicle()">Track</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>💰 Driver Payment</h3>
+        <button class="option-button" (click)="driverPayment()">Payment</button>
+      </div>
+  
+      <div class="option-box">
+        <h3>🛡️ Geofence</h3>
+        <button class="option-button" (click)="geofence()">Set Geofence</button>
+      </div>
+  
+    </div>
+  
+    <button class="logout-button" (click)="logout()">🚪 Logout</button>
+  </div>
+  

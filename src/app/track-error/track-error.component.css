@@ -1,0 +1,29 @@
+.error-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff0f0;
+    border: 1px solid #f5c2c2;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #d9534f;
+  }
+  
+  button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #c9302c;
+  }
+  

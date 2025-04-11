@@ -1,0 +1,12 @@
+<div class="track-vehicle-page">
+  <h2>Track Vehicle</h2>
+  <form (ngSubmit)="onTrack()">
+    <label>Driver ID:</label>
+    <input type="text" [(ngModel)]="driverId" name="driverId" required>
+
+    <label>Vehicle Number:</label>
+    <input type="text" [(ngModel)]="vehicleNumber" name="vehicleNumber" required>
+
+    <button type="submit">Track Vehicle</button>
+  </form>
+</div>

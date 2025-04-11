@@ -1,0 +1,40 @@
+<div class="homepage-container">
+  <header class="header">
+    <div class="nav-links">
+      <button class="nav-button" (click)="navigateHome()">Home</button>
+      <button class="nav-button" (click)="navigateAbout()">About</button>
+      <button class="nav-button" (click)="navigateContact()">Contact</button>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <!-- Left Section for Info and Contact with Animation -->
+    <div class="info-section">
+      <h1 class="fade-in-title">Welcome to Vehicle Tracking</h1>
+      <p class="intro-text fade-in-text">
+        Track and monitor your vehicles in real-time with precision and ease! Our platform is designed to help administrators oversee vehicle activities, maintain records, and ensure on-road safety.
+      </p>
+      
+      <p class="features-text fade-in-text-delayed">
+        <strong>Key Features:</strong><br>
+        - Real-time GPS tracking<br>
+        - Driver management and route planning<br>
+        - Vehicle history and reports<br>
+        - Customizable geofencing for location alerts
+      </p>
+      
+      <p class="contact-info fade-in-contact">
+        <strong>Contact us:</strong> <br>
+        <strong>Email:</strong> kalludon121212 <br>
+        <strong>Phone:</strong> +919955287086
+      </p>
+    </div>
+
+    <!-- Right Section for Navigation Buttons with Animation -->
+    <div class="nav-buttons slide-in-buttons">
+      <button (click)="navigateToAdminLogin()">Login</button>
+      <!-- <button (click)="navigateToDriverLogin()">Driver Login</button> -->
+      <button (click)="navigateToAdminRegistration()">Registration</button>
+    </div>
+  </div>
+</div>
