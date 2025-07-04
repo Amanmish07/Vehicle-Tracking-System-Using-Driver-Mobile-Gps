@@ -25,11 +25,6 @@ A web-based system to track vehicles in real-time using the driver's mobile GPS 
 
 ---
 
-## 📸 Screenshots
-> *(Add screenshots of the admin panel, map view, and driver panel)*
-
----
-
 ## 🔗 Live Demo
 
 **Frontend**: [Your deployed Firebase/Netlify link here]  
